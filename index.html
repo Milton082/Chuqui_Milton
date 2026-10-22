@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaje seguro</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">Agencia de viajes</p>
+        <nav>
+          <a href="#destinos-Recomendados">Destinos</a>
+          <a href="#precios">Precios</a>
+          <a href="#formulario">Reservas</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1>Bienvenido a tu<br />Agencia de Viajes</h1>
+          <p>Descubre los mejores destinos y precios</p>
+        </div>
+      </section>
+      <section id="destinos-Recomendados">
+        <div class="container">
+          <div class="img-container"></div>
+          <h2>Destinos Recomendados</h2>
+          <article>
+            <h3>Baños</h3>
+            <p>Disfruta de cascadas, termas y deportes de aventura.</p>
+          </article>
+          <article>
+            <h3>Cuenca</h3>
+            <p>Visita su centro histórico, museos y mercados.</p>
+          </article>
+        </div>
+      </section>
+      <section id="precios">
+        <div class="container">
+          <h2 id="precios-guia">Precios de ejemplo</h2>
+          <div class="tabla">
+            <table>
+              <caption>
+                Precios de ejemplo por destino
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Destino</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Días</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Baños</td>
+                  <td>$500</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Cuenca</td>
+                  <td>$400</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="formulario">
+        <div class="container">
+          <h2>Información personal</h2>
+          <form>
+            <fieldset>
+              <legend>Formulario de contacto</legend>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required />
+              <label for="telefono-ecuatoriano">Teléfono ecuatoriano</label>
+              <input
+                type="tel"
+                id="telefono-ecuatoriano"
+                name="telefono-ecuatoriano"
+                pattern="(?:\+593|0)9[0-9]{8}"
+                title="Ingresa un número móvil ecuatoriano, por ejemplo 0991234567 o +593991234567"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Detalle del viaje</legend>
+              <label for="destino">Destino</label>
+              <select id="destino" name="destino" required>
+                <option value="">Selecciona un destino</option>
+                <option value="Banos">Baños</option>
+                <option value="Cuenca">Cuenca</option>
+              </select>
+              <label for="fecha">Fecha de viaje</label>
+              <input type="date" id="fecha" name="fecha" required />
+              <label for="numero-personas">Número de personas</label>
+              <input
+                type="number"
+                id="numero-personas"
+                name="numero-personas"
+                min="1"
+                max="10"
+                required
+              />
+            </fieldset>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <aside id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Tienes alguna pregunta? ¡Contáctanos!
+          <a href="mailto:viajes@example.ec">viajes@example.ec</a>
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Agencia de Viajes</p>
+      </div>
+    </footer>
+  </body>
+</html>

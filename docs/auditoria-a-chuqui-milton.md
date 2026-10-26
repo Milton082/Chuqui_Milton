@@ -1,6 +1,0 @@
-## Auditoría - Laboratorio Cruzado
-
-| N.º | Requisito | Ubicación (archivo y línea o selector) | Hallazgo | Norma que incumple | Evidencia | Severidad (alta, media, baja) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Base 3: tabla de datos | `index.html`, líneas 47 y 52 (en `<tbody>`) | Las filas de datos usan la etiqueta `<td>Baños</td>` y `<td>Cuenca</td>` para el nombre de los destinos. Se esperaba encontrar un encabezado de fila utilizando `<th scope="row">` para vincular correctamente el destino con su precio y días. | WCAG 2.2, criterio 1.3.1 (Información y relaciones) | Captura de inspección de código de la tabla (`evidencias/hallazgo-tabla.png`) | Media |
-| 2 | Base 1: Estructura semántica | `index.html`, línea 96 | El enlace de correo electrónico tiene el atributo `href="viajes@example.ec"` pero carece del esquema/protocolo necesario. Se esperaba encontrar `href="mailto:viajes@example.ec"`. Al hacer clic, el navegador arroja error intentando abrir un archivo local inexistente. | Especificación HTML5 (WHATWG) - Esquemas de URL válidos | Captura de DevTools en el `<aside>` (`evidencias/hallazgo-correo.png`) | Alta |
